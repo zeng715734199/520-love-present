@@ -56,15 +56,3 @@ function timeElapse(date){
 	$("#clock").html(result);
 }
 
-
-// Bgm
-$('#mc_play').click(function () {
-	var music = document.getElementById('musicfx');
-	if (music.paused) {
-		music.play();
-		$('#mc_play').attr('class', 'on');
-	} else {
-		music.pause();
-		$('#mc_play').attr('class', 'stop');
-	}
-})
