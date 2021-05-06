@@ -55,3 +55,16 @@ function timeElapse(date){
 	var result = "第 <span class=\"digit\">" + days + "</span> 天 <span class=\"digit\">" + hours + "</span> 小时 <span class=\"digit\">" + minutes + "</span> 分钟 <span class=\"digit\">" + seconds + "</span> 秒"; 
 	$("#clock").html(result);
 }
+
+
+// Bgm
+$('#mc_play').click(function () {
+	var music = document.getElementById('musicfx');
+	if (music.paused) {
+		music.play();
+		$('#mc_play').attr('class', 'on');
+	} else {
+		music.pause();
+		$('#mc_play').attr('class', 'stop');
+	}
+})
